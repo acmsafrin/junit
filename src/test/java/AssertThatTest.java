@@ -85,4 +85,6 @@ public class AssertThatTest {
         assertThat(name, endsWith("Dale"));
         assertThat(name, containsString("Jr"));
     }
+
+
 }
