@@ -11,7 +11,7 @@ import java.util.Collection;
 @RunWith(Parameterized.class)
 public class ParameterizedFactorialTest {
 
-    @Parameterized.Parameters
+    @Parameterized.Parameters(name = "{index}: factorial({0})={1}")
     public static Collection<Object[]> factorialData() {
         return Arrays.asList(new Object[][] {
                 { 0, 1 }, { 1, 1 }, { 2, 2 }, { 3, 6 },

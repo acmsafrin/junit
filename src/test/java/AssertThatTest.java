@@ -86,5 +86,8 @@ public class AssertThatTest {
         assertThat(name, containsString("Jr"));
     }
 
-
+    @Test(timeout=10)
+    public void forEver() throws Exception {
+        Thread.sleep(100000);
+    }
 }
