@@ -27,4 +27,6 @@ public class Stock {
     public void setStockCode(String stockCode) {
         this.stockCode = stockCode;
     }
+
+
 }
