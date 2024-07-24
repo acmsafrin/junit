@@ -1,7 +1,14 @@
 package org.softengin;
 
 public class Broker {
-    public void trade(StockManager stockManager,Stock stock){
+
+    private StockManager stockManager;
+
+    public Broker(StockManager stockManager) {
+        this.stockManager = stockManager;
+    }
+
+    public void trade(Stock stock){
         stockManager.sellStock(stock);
     }
 }
